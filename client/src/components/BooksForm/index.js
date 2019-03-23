@@ -14,8 +14,8 @@ class BooksForm extends Component {
         API.search(search)
             .then(res =>
                 this.setState({
-                    results: res.data.items.volumeInfo,
                     search: "",
+                    results: res.data.items.volumeInfo,
                 })
             )
             .catch(err => console.log(err));
