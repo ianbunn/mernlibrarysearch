@@ -1,21 +1,15 @@
-import React, { Component } from "react"
+import React from "react"
 // import API from "../utils/API"
+import Jumbotron from "../components/Jumbotron"
+import Books from "../components/Books"
 
-class Search extends Component {
-    state = {
-        search: "",
-        books: [],
-        results: [],
-        error: ""
-    }
-
-    render() {
-        return (
-            <div>
-                <p>hello from search page</p>
-            </div>
-        )
-    }
+function Search() {
+    return (
+        <div>
+            <Jumbotron />
+            <Books />
+        </div>
+    )
 }
 
 export default Search

@@ -4,7 +4,6 @@ const routes = require("./routes")
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-require('dotenv').config()
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
