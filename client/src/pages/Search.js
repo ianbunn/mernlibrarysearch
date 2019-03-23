@@ -1,7 +1,7 @@
 import React from "react"
 // import API from "../utils/API"
 import Jumbotron from "../components/Jumbotron"
-import Books from "../components/BooksForm"
+import BooksForm from "../components/BooksForm"
 
 function Search() {
     return (
