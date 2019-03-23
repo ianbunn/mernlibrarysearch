@@ -1,13 +1,13 @@
 import React from "react"
 // import API from "../utils/API"
 import Jumbotron from "../components/Jumbotron"
-import Books from "../components/Books"
+import Books from "../components/BooksForm"
 
 function Search() {
     return (
         <div>
             <Jumbotron />
-            <Books />
+            <BooksForm />
         </div>
     )
 }
