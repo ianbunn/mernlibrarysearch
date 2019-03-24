@@ -11,9 +11,15 @@ const bookSchema = new Schema({
         type: Array,
         required: true
     },
+    publisheddate: String,
+    categories: Array,
     description: String,
-    image: String,
-    link: String
+    thumbnail: String,
+    link: String,
+    saved: {
+        type: Boolean,
+        default: true 
+    }
 })
 
 const Book = mongoose.model("Book", bookSchema)
