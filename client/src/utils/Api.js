@@ -1,10 +1,10 @@
 import axios from "axios"
-// require("dotenv").config("../../../.env")
 import dotenv from "dotenv"
-dotenv.config()
+// require("dotenv").config("../../.env")
+dotenv.config("../../.env")
 // import GOOGLE_BOOKS_API from "../config_keys"
 
-const APIKEY = process.env.GOOGLE_BOOKS_API;
+const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const BASEURL = `https://www.googleapis.com/books/v1/volumes?key=${APIKEY}&orderBy=relevance`
 
 export default {
