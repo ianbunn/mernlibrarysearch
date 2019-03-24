@@ -4,6 +4,7 @@ import SearchInput from "../SearchInput"
 import BooksResults from "../BooksResults"
 import BookDetails from "../BookDetails"
 import NoPic from "../../images/nopic.jpg"
+import "./style.css"
 
 // Smart component for Books Container to pass its state
 class BooksContainer extends Component {

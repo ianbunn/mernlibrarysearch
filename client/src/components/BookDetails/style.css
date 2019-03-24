@@ -1,0 +1,16 @@
+.card {
+    margin-bottom: 20px;
+    display: block;
+}
+.col-md-2 {
+    position: relative;
+    left: 25px;
+}
+
+
+@media screen and (max-width: 575px) {
+    .col-md-2 {
+        position: relative;
+        left: 20px;
+    }
+}

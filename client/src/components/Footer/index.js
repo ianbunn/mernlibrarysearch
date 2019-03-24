@@ -4,7 +4,7 @@ import "./style.css"
 function Footer() {
     return (
         <footer className="footer">
-            <span>All Mighty Book Search</span>
+            <span>All Mighty Book Search © 2019</span>
         </footer>
     )
 }

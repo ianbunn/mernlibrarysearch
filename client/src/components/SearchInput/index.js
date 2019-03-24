@@ -1,4 +1,5 @@
 import React from "react"
+import "./style.css"
 
 // Search form input for user's search term
 function SearchInput(props) {

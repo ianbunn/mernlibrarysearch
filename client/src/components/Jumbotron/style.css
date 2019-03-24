@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("../../images/jumbotron.jpg");
+    background-size: cover;
+    margin-left: -5px;
+    margin-right: -5px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.37em;
+}

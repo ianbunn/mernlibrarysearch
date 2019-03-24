@@ -52,7 +52,7 @@ class Saved extends Component {
                                         ? result.thumbnail
                                         : NoPic
                                 }
-                                link={result.infoLink}
+                                link={result.link}
                                 deleteBook={this.deleteBook}
                                 id={result._id}
                                 saved={result.saved}

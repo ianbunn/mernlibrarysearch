@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 // BooksResults passes the props.children to BookDetails
 const BooksResults = props => {
