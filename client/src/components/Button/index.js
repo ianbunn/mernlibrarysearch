@@ -1,11 +1,9 @@
 import React from "react";
 
-// dynamic button so that it is reusable for both saving and deleting.
-
 const Button = props => {
-    if (props.children === "Save") {
+    if (props.children === "Delete Book") {
         return (
-            <button onClick={props.onClick}>
+            <button id={props.id} onClick={props.onClick}>
                 {props.children}
             </button>
         );

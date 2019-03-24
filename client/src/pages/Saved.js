@@ -3,6 +3,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/Api.js"
 import BooksResults from "../components/BooksResults";
 import BookDetails from "../components/BookDetails";
+import StartSearch from "../components/StartSearch";
 import NoPic from "../images/nopic.jpg"
 
 class Saved extends Component {
@@ -20,7 +21,10 @@ class Saved extends Component {
             .catch(err => console.log(err));
     };
 
-    deleteBook = id => {
+    deleteBook = event => {
+        event.preventDefault();
+        const target = event.target.parentNode.parentNode;
+        const id = target.querySelector('button').id;
         API.deleteBook(id)
             .then(res => this.loadBooks())
             .catch(err => console.log(err));
@@ -40,7 +44,7 @@ class Saved extends Component {
                                 key={result._id}
                                 title={result.title}
                                 authors={result.authors}
-                                publishedDate={result.publisheddate}
+                                publisheddate={result.publisheddate}
                                 description={result.description}
                                 categories={result.categories}
                                 thumbnail={
@@ -51,11 +55,12 @@ class Saved extends Component {
                                 link={result.infoLink}
                                 deleteBook={this.deleteBook}
                                 id={result._id}
+                                saved={result.saved}
                             />
                         ))
                     ) : (
-                            <h4 className="no-results">Please try another search!</h4>
-                        )}
+                            <StartSearch />
+                    )}
                 </BooksResults>
             </div>                            
         );

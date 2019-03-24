@@ -34,10 +34,8 @@ const BookDetails = props => {
                 <a href={props.link} className="link" target="_blank" rel="noopener noreferrer">Read More</a>
 
                 {/* Button to Save or Delete from MongoDB */}
-                {!props.saveBook ? (
-                    <Button id={props.id} onClick={props.deleteBook}>
-                        Delete Book
-                    </Button>
+                {props.saved && props.id ? (
+                    <Button id={props.id} onClick={props.deleteBook}>Delete Book</Button>
                 ) : (
                     <Button onClick={props.saveBook}>Save Book</Button>
                 )}

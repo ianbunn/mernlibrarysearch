@@ -36,7 +36,7 @@ class BooksContainer extends Component {
         API.saveBook({
             title: target.querySelector('.title').textContent,
             authors: target.querySelector('.authors').textContent,
-            publishedDate: target.querySelector('.publisheddate').textContent,
+            publisheddate: target.querySelector('.publisheddate').textContent,
             description: target.querySelector('.description').textContent,
             categories: target.querySelector('.categories').textContent,
             thumbnail: target.querySelector('.thumbnail').src,
