@@ -1,6 +1,6 @@
 import axios from "axios"
-import dotenv from "dotenv"
-dotenv.config("../../.env")
+// import dotenv from "dotenv"
+// dotenv.config("../../.env")
 // import GOOGLE_BOOKS_API from "../config_keys"
 
 const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
