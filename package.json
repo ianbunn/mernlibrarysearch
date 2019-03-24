@@ -11,7 +11,7 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "echo Skip builds on Heroku"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "node": "10.3.0",
     "npm": "6.x"
   },
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
