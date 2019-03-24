@@ -1,6 +1,5 @@
 import axios from "axios"
 import dotenv from "dotenv"
-// require("dotenv").config("../../.env")
 dotenv.config("../../.env")
 // import GOOGLE_BOOKS_API from "../config_keys"
 
