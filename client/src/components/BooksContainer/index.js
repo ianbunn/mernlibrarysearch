@@ -43,7 +43,10 @@ class BooksContainer extends Component {
             thumbnail: target.querySelector('.thumbnail').src,
             link: target.querySelector('.link').href,
             saved: true
-        }).then(res => console.log(res));
+        }).then((res) => {
+            console.log(res)
+            alert(`Your book ${res.data.title} has been saved!`)
+        });
     };
 
     // Handle the input change on form
