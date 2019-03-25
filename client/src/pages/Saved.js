@@ -26,7 +26,12 @@ class Saved extends Component {
         const target = event.target.parentNode.parentNode;
         const id = target.querySelector('button').id;
         API.deleteBook(id)
-            .then(res => this.loadBooks())
+            .then((res) => {
+                const deleteConfirm = window.confirm(`Are you sure you want to delete this book?`)
+                if(deleteConfirm) {
+                    this.loadBooks()
+                }
+            })
             .catch(err => console.log(err));
     };
 

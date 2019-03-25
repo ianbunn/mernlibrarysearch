@@ -31,8 +31,8 @@ class BooksContainer extends Component {
     }
 
     saveBook = event => {
-        event.preventDefault();
-        const target = event.target.parentNode.parentNode;
+        event.preventDefault()
+        const target = event.target.parentNode.parentNode
         console.log(target)
         API.saveBook({
             title: target.querySelector('.title').textContent,
@@ -46,8 +46,8 @@ class BooksContainer extends Component {
         }).then((res) => {
             console.log(res)
             alert(`Your book ${res.data.title} has been saved!`)
-        });
-    };
+        }).catch(err => alert(`This book was already saved, please try another book!`))
+    }
 
     // Handle the input change on form
     handleInputChange = event => {
